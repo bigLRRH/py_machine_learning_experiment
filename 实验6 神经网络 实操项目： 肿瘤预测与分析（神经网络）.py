@@ -22,7 +22,7 @@ print('测试集平均癌症发生率(y_test_mean):',np.mean(y_test))
 from sklearn.neural_network import MLPClassifier
 clf = MLPClassifier()
 # 4.进行模型训练。
-y_hat=clf.fit(X_train,y_train)
+clf.fit(X_train,y_train)
 # 5.进行模型预测，对真实数据和预测数据进行可视化（用Axes3D绘制3d散点图）。
 from mpl_toolkits.mplot3d import Axes3D#导入三维显示工具
 #真实数据

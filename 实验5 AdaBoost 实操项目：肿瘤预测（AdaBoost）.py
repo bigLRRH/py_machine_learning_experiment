@@ -22,7 +22,6 @@ print('测试集平均癌症发生率(y_test_mean):',np.mean(y_test))
 #  3.配置模型，训练模型，模型预测，模型评估。
 from sklearn import tree # 导入决策树包
 from sklearn.ensemble import AdaBoostClassifier # 导入 AdaBoost 包
-from sklearn.metrics import accuracy_score # 导入准确率评价指标
 #   （1）构建一棵最大深度为2的决策树弱学习器，训练、预测、评估。
 estimator = tree.DecisionTreeClassifier(max_depth=2)
 estimator.fit(X_train,y_train)
